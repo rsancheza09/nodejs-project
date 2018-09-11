@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-project-db",
+  "version": "1.0.0",
+  "description": "Simple IoT Platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "lint-fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsancheza09/nodejs-project.git"
+  },
+  "author": "Randall Sánchez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsancheza09/nodejs-project/issues"
+  },
+  "homepage": "https://github.com/rsancheza09/nodejs-project#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0"
+  }
+}

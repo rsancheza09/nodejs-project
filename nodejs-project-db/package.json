@@ -4,6 +4,7 @@
   "description": "Simple IoT Platform - DB Module",
   "main": "index.js",
   "scripts": {
+    "setup": "DEBUG=nodejs-project:* node setup.js",
     "lint": "standard",
     "lint-fix": "npm run lint -- --fix"
   },
@@ -21,6 +22,7 @@
     "standard": "^12.0.1"
   },
   "dependencies": {
+    "debug": "^4.0.1",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.38.0"

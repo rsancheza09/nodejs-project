@@ -8,6 +8,7 @@ const defaults = require('defaults')
 
 module.exports = async function (config) {
 
+  // It helps for tests
   config = defaults(config, {
     dialect: 'sqlite',
     pool: {
@@ -19,6 +20,7 @@ module.exports = async function (config) {
       raw: true
     }
   })
+
   const sequelize = setupDatabase(config)
   const AgentModel = setupAgentModel(config)
   const MetricModel = setupMetricModel(config)
